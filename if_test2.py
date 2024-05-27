@@ -1,88 +1,51 @@
-# if문 연습
-'''
-today = input('요일을 입력하세요:')
+#제어문 - 조건문
 
-if today == '일요일':
-    print('게임 세판 하시고')
-print('공부 시작')
-'''
+#홀짝 판별
 
-# 2. if~else문
-'''
-today = input('요일을 입력하세요:')
+#수하나 입력
+#입력된 수가 홀수 or 짝수인지 판별
 
-if today =='일요일':
-    print('게임 세판 합시다')
+'''
+n = int(input('정수하나를 입력하세요:'))
+if n %2 == 1: #홀수
+    print(f'{n}은 홀수입니다')
 else:
-    print('게임한판 합시다')
-print('공부 시작')
-'''
-# 3. if~elif~else문
-'''
-today = input('요일을 입력합시다')
+    print(f'{n}은 짝수입니다')
 
-if today == '일요일':
-    print('게임 열판')
-elif today == '토요일':
-    print('게임 세판')
+#합격 탈락 판별 
+score = int(input('점수를 입력하세요:'))
+if score >= 60:
+    print('합격')
 else:
-    print('물 한잔 먹고 공부시작')
+    print('불합격')
     '''
-'''
-total = int(input('입장 인원을 입력하세요:'))
 
-if total <= 4:
-    print('추가비용X')
-elif total == 5:
-    print(f'추가비용은 {total - 4}만원입니다')
-elif total == 6:
-    print(f'추가비용은 {total - 4}만원입니다')
-elif total == 7:
-    print(f'추가비용은 {total - 4}만원입니다')
-elif total == 8:
-    print(f'추가비용은 {total - 4}만원입니다')        
+#열날때 행동 요령
+
+temp = int(input('체온을 입력하세요:'))
+if temp >= 40:
+           print('당장 응급실로 가세요')
+elif temp >= 38:
+    print('병원을 가세요')
+elif 37 >= temp >= 36:
+    print('학교에 가서 보건선생님을 만나요')
 else:
-    print('입장인원은 최대 8명 입니다')
-'''
+    print('정상입니다 학교로 가세요')
 
-
-
-total = int(input('입장 인원을 입력하세요:'))
-if total <=4:
-    print('추가비용이 없습니다')
-elif total > 4 and total <=8:
-    print(f'추가 비용은 {total - 4}만원 입니다')
+#학점 판별
+score = int(input('점수를 입력하세요:'))
+if score >= 90:
+    print('A')
+elif score >= 80:
+    print('B')
+elif score >= 70:
+    print('c')
+elif score >= 60:
+    print('D')
 else:
-    print('최대 입장인원은 8명 입니다')
+    print('E')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
